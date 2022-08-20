@@ -1,0 +1,37 @@
+
+    body {
+        width: 960px;
+        color: #5a5555;
+        padding-left: 25px;
+        font-family: Arial, Helvetica, sans-serif;
+        margin: auto;
+        text-align: justify;
+        background-color: orange;
+
+    }
+        
+    *{
+        margin: 0px;
+        font-family:roboto;
+    }  
+    
+    main {
+        background-color: white;
+        /*margin: 20px;*/
+        padding: 20px;
+    }
+    h1 {
+        font-family: roboto;
+        font-size:40px; 
+        margin:0; 
+        color: rgb(24,85,148);
+    }
+    h2 {
+        font-size: 30px;
+        color: rgba(0,0,0,.6);
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 100
+    }
+    
+        
+
