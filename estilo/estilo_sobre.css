@@ -1,71 +1,83 @@
 
-    body {
-        width: 760px;
-        color: #5a5555;
-        padding-left: 25px;
-        font-family: Arial, Helvetica, sans-serif;
-        margin: auto;
-        text-align: justify;
-        background-color: var(--cor-de-fundo)
+   * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-    }
-    :root {
-        --cor-de-fundo:orange;
-        --cor-secundaria: white;
-    }
-        
-    *{
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-        
-    }  
-    
-    main {
-        background-color: var(--cor-secundaria);
-        /*margin: 20px;*/
-        padding: 20px;
-        float: left;
-        width: 85%;
-    }
-    
-    h1 {
-        font-family: roboto;
-        font-size:40px; 
-        margin:0; 
-        color: rgb(24,85,148);
-    }
-    h2 {
-        font-size: 40px;
-       
-    }
-    li { 
-        list-style-type: none;
-        display: block;
-        background-color: blue;
-        padding: 10px;
-    }
-    li a {
-        
-        padding: 10px;
-        line-height: 10px;
-        color: white
-        
-    }
-    
-    footer {
-        height: 50px;
-        color: blanchedalmond;
-        background-color: black;
-        clear: both;
+:root{
+    --cor-de-fundo: rgb(231, 134, 7);
+    --cor-secundaria: rgb(255, 255, 255);
+}
 
+body{
+    font-family: Roboto, sans-serif;
+    width: 760px;
+    margin: auto;
+    text-align: justify;
+    background-color: var(--cor-de-fundo);
+}
 
-    }
-    aside {
-        float: right;
-        width: 15%;
-        background-color: var(--cor-secundaria);
-    }
-    
-        
+main{
+    background-color: var(--cor-secundaria);
+    /* margin: 20px; */
+    padding: 20px;
+    float: left;
+    width: 85%;
+}
 
+/* main h1{ */
+/*
+ # = id 
+ . = class
+*/
+.diferenciado {
+    font-family: Roboto, sans-serif;
+    font-size: 60px;
+    margin:0;
+    text-transform: uppercase;
+    /* Isto é um comentário em CSS*/
+    color: rgb(0, 0, 255);
+    /* color: rgb(0, 0, 255, 0.5); */
+    /* color: #0000FF; hexadecimal */
+}
+
+.vermelho{
+    color: red;
+}
+
+#nomeCliente{
+    font-size: 20px;
+}
+
+h2 {
+    font-size: 40px;
+}
+
+li{
+    background-color: blue;
+    list-style-type: none;
+    display: block;
+    padding: 10px;
+}
+
+li a {
+    display: block;
+    color: rgb(233, 221, 221);
+    padding: 10px;
+    line-height: 20px;
+}
+
+footer{
+    height: 50px;
+    line-height: 50px;
+    background-color: black;
+    color: blanchedalmond;
+    clear: both;/*left right both*/
+}
+
+aside {
+    float: right;
+    width: 15%;
+    background-color: var(--cor-secundaria)
+}
