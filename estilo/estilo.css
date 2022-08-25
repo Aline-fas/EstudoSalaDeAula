@@ -110,7 +110,7 @@ footer{
     clear: both;/*left right both*/
 }
 
-divisao.coluna {
+.divisaoColuna {
 float: left;
 width: 40%;
 }
