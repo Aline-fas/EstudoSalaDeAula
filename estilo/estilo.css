@@ -69,25 +69,22 @@ aside {
     width: 18%;
     margin: auto;
     position: relative;
-    top: 20px;
+    top: -37px;
     right: 20px;
 
 }
 
-.limpaFloat{
-clear: both;
-}
 
 li{
-    background-color: blue;
+    background-color: var(--cor-azul);
     list-style-type: none;
     display: block;
     /*padding: 10px;*/
 }
 
-li a {
+nav ul li a {
     display: block;
-    color: rgb(233, 221, 221);
+    color: var(--cor-secundaria);
     padding: 10px;
     text-decoration: none;
     text-transform: bold;
@@ -110,11 +107,18 @@ footer{
     clear: both;/*left right both*/
 }
 
+ul {
+    background-color: var(--cor-azul);
+}
+
 .divisaoColuna {
 float: left;
 width: 40%;
 }
 
+.reduçaoDoTexto {
+    width: 75%;
+}
 /* main h1{ */
 /*
  # = id 
@@ -141,3 +145,24 @@ width: 40%;
     text-align: center;
 }
 
+
+.icones-sociais li {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    margin-left: 10px;
+   }
+   
+   .icones-sociais a {
+       background-image: url(img/github.png);
+       background-image: url(img)
+       width: 40px;
+       height: 40px;
+       display: inline-block;
+   }
+   
+   
+   .limpaFloat{
+   clear: both;
+   }
