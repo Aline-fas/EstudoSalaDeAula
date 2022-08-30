@@ -15,9 +15,26 @@
 
 body{
     font-family: Roboto, sans-serif;
+    background-color: var(--cor-de-fundo);
+}
+header {
+    background-color: var(--cor-de-fundo);
+    height: 150px;
     width: 1024px;
     margin: auto;
-    background-color: var(--cor-de-fundo);
+    position: relative;
+}
+header nav {
+    width: 1024px;
+    position: absolute;
+    bottom: 0;
+  
+    
+}
+header nav ul li  {
+    display: inline-block;
+    padding-left: 60px;
+    padding-right: 50px;
 }
 
 main{
@@ -26,8 +43,9 @@ main{
     /* margin: 20px; */
     padding: 20px;
     position: relative;
-
-  
+    width: 1024px;
+    margin: auto;
+    
 }
 
 blockquote{
@@ -48,6 +66,14 @@ cite {
 
 h2 {
     font-size: 40px;
+}
+
+p {
+    text-indent: 50px;
+}
+
+ul,ol {
+    list-style: none;
 }
 
 figure { 
@@ -109,6 +135,8 @@ footer{
 
 ul {
     background-color: var(--cor-azul);
+    list-style: none;
+
 }
 
 .divisaoColuna {
@@ -144,7 +172,9 @@ width: 40%;
     font-size: 18px;
     text-align: center;
 }
-
+ aside, nav, ul {
+     background-color: var(--cor-azul)
+ }
 
 .icones-sociais li {
     display: inline-block;
@@ -155,11 +185,21 @@ width: 40%;
    }
    
    .icones-sociais a {
-       background-image: url(img/github.png);
-       background-image: url(img)
+      /* background-image: url(../img/github.png);*/
        width: 40px;
        height: 40px;
        display: inline-block;
+       text-indent: -9999px;
+       
+   }
+   .github{
+       background-image: url(../img/github.png);
+   }
+   .linkedin {
+       background-image: url(../img/linkedin.png);
+   }
+   .twitter {
+       background-image: url(../img/twitter.png);
    }
    
    
