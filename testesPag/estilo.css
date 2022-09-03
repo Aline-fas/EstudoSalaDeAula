@@ -1,0 +1,24 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: blue;
+    width:200px;
+    height:200px;
+    color: blue;
+}
+main {
+    background-color: pink;
+ color: pink;
+ width:200px;
+    height:200px;
+}
+aside {
+    background-color: green;
+    color: green;
+    width:200px;
+    height:200px;
+}

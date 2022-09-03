@@ -10,19 +10,22 @@ h1 {
     position: fixed;
     top: 10px;
     }
-    h2 {
+
+h2 {
         margin-top: 100px;
     }
+
 .pai {
     width: 400px;
     height: 400px;
     background-color: blue;
+    position: sticky;
+    top: 50px;
 }
 
 .filho {
     width:200px;
     height:200px;
     background-color: green;
-    position: sticky;
-    top: 50px;
+
 }

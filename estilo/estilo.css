@@ -24,17 +24,53 @@ header {
     margin: auto;
     position: relative;
 }
+
+header img {
+    width: 80px;
+
+}
+
+#logo {
+    position: absolute;
+    left: 0;
+    top: 10px;
+    height: 90px;
+}
+
+input[type=text] {
+    width: 500px;
+    height: 40px;
+    font-size: 20px;
+    line-height: 38px;
+    position: absolute;
+    left: 250px;
+    top:10px;
+    border-radius: 100px;
+    text-indent: 20px;
+    font-style: italic;
+}
+#textoEnviamos {
+    color: var(--cor-secundaria);
+    position: absolute;
+    top: 70px;
+    left: 275px;
+    font-size: 20px;
+    text-align: center;
+}
+
+
 header nav {
     width: 1024px;
     position: absolute;
     bottom: 0;
+
   
     
 }
 header nav ul li  {
     display: inline-block;
-    padding-left: 60px;
-    padding-right: 50px;
+    /*padding-left: 60px;
+    padding-right: 50px;*/
 }
 
 main{
@@ -63,6 +99,10 @@ cite {
     line-height: 20px;
     text-align: right
 }
+
+.limpaFloat{
+    clear: both;
+    }
 
 h2 {
     font-size: 40px;
@@ -95,6 +135,8 @@ aside {
     width: 18%;
     margin: auto;
     position: relative;
+    bottom: 34px;
+    clear: right;
     top: -37px;
     right: 20px;
 
@@ -103,7 +145,7 @@ aside {
 
 li{
     background-color: var(--cor-azul);
-    list-style-type: none;
+    /*list-style-type: none;
     display: block;
     /*padding: 10px;*/
 }
@@ -121,7 +163,7 @@ nav li a:hover {
     display: block;
     background-color: var(--cor-de-fundo);
     text-transform: bold;
-    transition: .3s;
+    transition: .6s;
 }
 
 
@@ -133,11 +175,11 @@ footer{
     clear: both;/*left right both*/
 }
 
-ul {
+/*ul {
     background-color: var(--cor-azul);
     list-style: none;
 
-}
+}*/
 
 .divisaoColuna {
 float: left;
@@ -163,6 +205,10 @@ width: 40%;
     /* color: #0000FF; hexadecimal */
 }
 
+img {
+    width: 100%;
+}
+
 .vermelho{
     color: red;
 }
@@ -177,6 +223,7 @@ width: 40%;
  }
 
 .icones-sociais li {
+    background-color: var(--cor-azul);
     display: inline-block;
     width: 40px;
     height: 40px;
@@ -189,6 +236,7 @@ width: 40%;
        width: 40px;
        height: 40px;
        display: inline-block;
+       color: white;
        text-indent: -9999px;
        
    }
@@ -203,6 +251,4 @@ width: 40%;
    }
    
    
-   .limpaFloat{
-   clear: both;
-   }
+   
