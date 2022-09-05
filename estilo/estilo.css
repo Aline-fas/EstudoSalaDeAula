@@ -37,6 +37,7 @@ header img {
     height: 90px;
 }
 
+
 input[type=text] {
     width: 500px;
     height: 40px;
@@ -45,7 +46,7 @@ input[type=text] {
     position: absolute;
     left: 250px;
     top:10px;
-    border-radius: 100px;
+    border-radius: 15px;
     text-indent: 20px;
     font-style: italic;
 }
@@ -56,6 +57,28 @@ input[type=text] {
     left: 275px;
     font-size: 20px;
     text-align: center;
+}
+
+/*#iconesLaterais {
+    background-color: transparent;
+    border: none;
+
+}*/ 
+
+#carrinho {
+    position: absolute;
+    left: 20px;
+    top:0px;
+    background-color: transparent;
+    border: none;
+}
+
+#cliente {
+    position: absolute;
+    right: 5px;
+    top:0px;
+    background-color: transparent;
+    border: none;
 }
 
 
