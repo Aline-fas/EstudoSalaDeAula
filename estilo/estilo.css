@@ -149,8 +149,14 @@ aside {
     width: 18%;
     margin: auto;
     position: relative;
+<<<<<<< Updated upstream
     /* top: -34px; */
     bottom: 34px;
+=======
+    bottom: px;
+    clear: right;
+    
+>>>>>>> Stashed changes
     right: 20px;
     clear: right;
     /* background-color: var(--cor-secundaria); */
