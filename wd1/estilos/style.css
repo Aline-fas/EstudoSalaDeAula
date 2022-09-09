@@ -56,6 +56,16 @@ h2{
     margin-right: 10px;
 }
 
+.imgRight {
+    float: right;
+    margin-left: 10px;
+}
+
+img{
+    filter: grayscale(100%);
+}
+
+
 p{
     line-height: 20px;
 }
@@ -66,3 +76,25 @@ footer{
     background-color: #999;
     margin-top: 10px;
 }
+input{
+    width: 250px;
+    background-color: #ccc;
+    color: #FFF;
+    border:none;
+}
+
+textarea {
+    border: none;
+    background-color: #ccc;
+    color: white;
+    border: none;
+}
+
+input[type=submit] {
+    width: 90px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+}
+
+
