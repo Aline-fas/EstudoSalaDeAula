@@ -109,12 +109,16 @@ input[type=submit] {
     border: none;
     border-radius: 3px;
     font-size: 17px;
-    /* float: left; */
-    position: relative;
     margin-left: 372px;
+    letter-spacing: 2px;
+}
+.limite {
+    color: #999;
+    font-weight: normal;
+    font-size: 14px;
 }
 .red {
     color: red;
     font-weight: normal;
-
+    font-size: 14px;
 }
