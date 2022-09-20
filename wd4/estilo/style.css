@@ -17,6 +17,7 @@ h2 {
 p {
     color: #666;
     line-height: 120%;
+  
 }
 
 aside p {
@@ -70,6 +71,18 @@ header {
 #banner img {
     width: 100%;
 }
+
+.anuncioTablet{
+width: 100%;
+height: auto;
+float: left;
+background-color: #f60;
+color: #fff;
+text-align: center;
+padding: 5px 0;
+display: none;
+}
+
 #conteudo {
     float: left;
     width: 60%;
@@ -79,7 +92,7 @@ header {
 #coluna{
     width: 35%;
     height: auto;
-    float: left;
+    float: right;
 }
 
 footer{
@@ -91,4 +104,69 @@ footer{
     font-size: 14px;
     line-height: 30px;
     text-align: center;
+}
+#menuMobile {
+    display: none;
+}
+
+/* Layout responsivo --- Media Query */
+/* esse codigo faz com que derteminadas configurações aparecam apenas nos dispositivos com os pixels escolhidos */
+
+ @media screen and (min-width:641px) and (max-width:768px) { /* tablet vertical */
+    .anuncioTablet {
+        display: block;
+    }
+ 
+}
+
+@media screen and (max-width:480px){ /* smart na horizontal */
+    /* ate 480px, essas configuraçoes serao aplicadas */
+
+    nav#menu a {
+        margin: 0 10px;
+    }
+
+    article#conteudo, aside#coluna {
+        width: 100%;
+    }
+
+    section#logo {
+        width: 180px;
+        height: auto;
+    }
+    
+    section#logo img {
+        width: 100%;
+    }
+
+}
+
+@media screen and (max-width:400px) {
+    nav#menu{ 
+        height: auto;
+        line-height: 30px;
+        display: none;
+    }
+
+    nav#menu a {
+        display: block;
+        border-bottom: 1px solid #fff;
+    }
+
+    nav#menu a:last-child {
+        border: none;
+    }
+
+    nav#menuMobile {
+        width: 100%;
+        display: block;
+
+    }
+
+    nav#menuMobile select {
+        width: 100%;
+        background-color: #333;
+        color:#fff;
+    }
+
 }
