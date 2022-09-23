@@ -1,41 +1,67 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Flexbox - 1 </title>
+    <title>Flexbox - 1</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container{
+            height: 100vh;
+            display: flex;
+            /* flex-direction: column; */
+            flex-wrap: wrap;
+            /*propriedade horizontal: flex-start, flex-end, center, space-around, space-between, space-evenly */
+            justify-content: space-evenly;
+            /* propriedade vertical: flex-start, flex-end, center, baseline, stretch */
+            align-items: center;
+            /*propriedade horizontal: flex-start, flex-end, center, space-around, space-between, space-evenly */
+            align-content: space-around;
+        }
+        
+        .child{
+            width: 20%;
+            /*Por padrão o flex força tudo ficar na mesma linha ... Para forçar ele acitar colocamos a flex-wrap: wrap; no elemento pai.*/
+            height: 200px;
+            background-color: bisque;
+            border: 1px solid black;
+            font-size: 30px;
+
+            /* display: flex;
+            justify-content: center;
+            align-items: center; */
+
+            /* ------------- Propriedade dos intens ------------------- */
+            /* order: 0; */
+            /* Define se um intem deve crescer se necessário. padrão; 0 */
+            /* flex-grow: 1; */
+            /* Define se um intem deve encolher se necessário. padrão; 0 */
+            /* flex-shrink: 0; */
+            /* Define um tamanho iníciao do item */
+            /* flex-basis: 200px; */
+            /* Shorthend para: flex-grow, flex-shrink e flex-basis. exatamente nessa ordem*/
+            /* flex: ; */
+            /* Alinha um unico item. : auto, flex-start, flex-end, center, baseline, stretch */
+            align-self: center;
+        }
+
+    </style>
 </head>
-<style>
-    * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-    }
-    .container{
-        height: 100vh;
-        display: flex;
-        /* flex-direction: column; */
-        flex-wrap: wrap;
-    }
-
-    .child{
-        width: 50%;
-        height: 200px;
-        background-color: bisque;
-        border: 1px solid black;
-        font-size: 30px;
-    }
-</style>
 <body>
-    
-    <div class="container">
-        <div class="child">1</div>
-        <div class="child">2</div>
-        <div class="child">3</div>
-        <div class="child">4</div>
-        <div class="child">5</div>
-    </div>
 
+    <div class="container">
+        <div style="order:1" class="child">1</div>
+        <div style="order:2" class="child">2</div>
+        <div style="order:3" class="child">3</div>
+        <div style="order:4" class="child">4</div>
+        <div style="order:0" class="child">5</div>
+    </div>
+    
 </body>
 </html>
